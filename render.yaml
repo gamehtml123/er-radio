@@ -23,5 +23,5 @@ services:
         fromService:
           type: web
           name: er-radio-server
-          property: url
+          property: host
     autoDeploy: false
