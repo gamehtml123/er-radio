@@ -3,7 +3,7 @@ services:
   - type: web
     name: er-radio-server
     env: node
-    root: server
+    rootDir: server
     buildCommand: npm install
     startCommand: node index.js
     envVars:
@@ -15,7 +15,7 @@ services:
   - type: web
     name: er-radio-client
     env: static
-    root: client
+    rootDir: client
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
